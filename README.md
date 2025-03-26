@@ -26,33 +26,33 @@ Saya memiliki layanan Microservice berikut:
 
 ## 3. Deploy Microservices ke Kubernetes
 1. Masuk ke folder `k8s`:
-   cd k8s
+   `cd k8s`
    
 2. Jalankan perintah berikut untuk menerapkan konfigurasi masing-masing layanan:
   
-   kubectl apply -f customer-service-deployment.yml
-   kubectl apply -f customer-service-service.yml
+   `kubectl apply -f customer-service-deployment.yml`
+   `kubectl apply -f customer-service-service.yml`
    
-   kubectl apply -f order-service-deployment.yml
-   kubectl apply -f order-service-service.yml
+   `kubectl apply -f order-service-deployment.yml`
+    `kubectl apply -f order-service-service.yml`
    
-   kubectl apply -f produk-service-deployment.yml
-   kubectl apply -f produk-service-service.yml
+   `kubectl apply -f produk-service-deployment.yml`
+   `kubectl apply -f produk-service-service.yml`
    
-   kubectl apply -f eureka-service-deployment.yml
-   kubectl apply -f eureka-service-service.yml
+   `kubectl apply -f eureka-service-deployment.yml`
+   `kubectl apply -f eureka-service-service.yml`
    
-   kubectl apply -f api-gateway-deployment.yml
-   kubectl apply -f api-gateway-service.yml
+   `kubectl apply -f api-gateway-deployment.yml`
+   `kubectl apply -f api-gateway-service.yml`
    
-   kubectl apply -f mysql-deployment.yml
-   kubectl apply -f mysql-service.yml
+   `kubectl apply -f mysql-deployment.yml`
+   `kubectl apply -f mysql-service.yml`
    
-   kubectl apply -f rabbitmq-deployment.yml
-   kubectl apply -f rabbitmq-service.yml
+   `kubectl apply -f rabbitmq-deployment.yml`
+   `kubectl apply -f rabbitmq-service.yml`
    
-   kubectl apply -f payment-service-deployment.yml
-   kubectl apply -f payment-service-service.yml
+   `kubectl apply -f payment-service-deployment.yml`
+   `kubectl apply -f payment-service-service.yml`
    ```
 
 ## 4. Mengecek Status Pods
@@ -67,16 +67,16 @@ Jika ada beberapa pods yang **Running**, tetapi yang lain **Error**, kemungkinan
 2. Jika ada kesalahan, perbaiki file yang bermasalah.
 3. Hapus deployment yang bermasalah, misalnya untuk `produk-service`:
    
-   kubectl delete deployment produk-service
+   `kubectl delete deployment produk-service`
    
 4. Terapkan ulang konfigurasi:
    
-   kubectl apply -f produk-service-deployment.yml
-   kubectl apply -f produk-service-service.yml
+   `kubectl apply -f produk-service-deployment.yml`
+   `kubectl apply -f produk-service-service.yml`
    
 5. Jalankan kembali:
    
-   kubectl get pods
+   `kubectl get pods`
    
    Jika berhasil, statusnya akan berubah menjadi **Running**.
 
