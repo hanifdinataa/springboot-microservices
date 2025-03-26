@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.teknologiinformasi</groupId>
-	<artifactId>restapi</artifactId>
+	<artifactId>produk-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>RESTFUL API</name>
 	<description>Demo project for Spring Boot</description>
